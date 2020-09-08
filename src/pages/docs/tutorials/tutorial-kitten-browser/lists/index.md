@@ -166,7 +166,7 @@ const obj = {a: 1, b: 2, c: 3};
 const cloned = {...obj};		// = {a: 1, b: 2, c: 3}
 const merged = {...obj, d: 4};	// = {a: 1, b: 2, c: 3, d: 4}
 ```
-When used with additional properties, the order in which the spread operator is used is important. Any properties with conflicting names that precede the spread object will by overwritten by the object and any properties with conflicting names that follow the spread object will overwrite the object.
+When used with additional properties, the order in which the spread operator is used is important. Any properties with conflicting names that precede the spread object will be overwritten by the object and any properties with conflicting names that follow the spread object will overwrite the object.
 ```js
 const obj = {a: 1, b: 2, c: 3};
 let merged = {a: 4, ...obj};		// = {a: 1, b: 2, c: 3}
